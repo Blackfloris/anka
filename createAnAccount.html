@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="headerCreateAccount">
+      <button type="submit" id="submitButtonForAccount" class="btnSignIn">
+        Sign in
+      </button>
+    </header>
+    <main class="main_SignIn">
+      <section class="main_section">
+        <div class="container">
+          <h1 class="heroTitle">Create an account</h1>
+          <form id="formCreateAccount">
+            <div class="form-group">
+              <p class="input_text">
+                First name
+                <span class="sup">*</span>
+              </p>
+              <input id="firstName" type="text" name="firstName" />
+              <span id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+              <p class="input_text">
+                Last name
+                <span class="sup">*</span>
+              </p>
+              <input id="lastName" type="text" name="lastName" />
+              <span id="lastNameError"></span>
+            </div>
+            <div class="form-group">
+              <p class="input_text">
+                Email
+                <span class="sup">*</span>
+              </p>
+              <input id="createEmail" type="email" name="createEmail" />
+              <span id="createEmailError"> </span>
+            </div>
+            <div class="form-group">
+              <p class="input_text">
+                Create Password
+                <span class="sup">*</span>
+              </p>
+              <input id="createPassword" type="text" name="createPassword" />
+              <span id="createPasswordError"></span>
+            </div>
+            <div class="form-group checkbox-group">
+              <input
+                class="checkboxIAgree"
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                value="newsletter"
+              />
+              <label for="subscribe">By continuing I agree</label>
+            </div>
+            <button id="btnCreateAccount" type="submit">
+              Create a free account
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./scriptIndex.js" defer></script>
+    <script src="./scriptCreateAnAccount.js" defer></script>
+  </body>
+</html>
